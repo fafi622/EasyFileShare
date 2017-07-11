@@ -1,0 +1,6 @@
+D:\ProgrammingProjects\c#\Git\EasyFileShare\ProjectFiles\FileShareServer\FileShareServer\bin\Debug\FileShareServer.exe.config
+D:\ProgrammingProjects\c#\Git\EasyFileShare\ProjectFiles\FileShareServer\FileShareServer\bin\Debug\FileShareServer.exe
+D:\ProgrammingProjects\c#\Git\EasyFileShare\ProjectFiles\FileShareServer\FileShareServer\bin\Debug\FileShareServer.pdb
+D:\ProgrammingProjects\c#\Git\EasyFileShare\ProjectFiles\FileShareServer\FileShareServer\obj\Debug\FileShareServer.csprojResolveAssemblyReference.cache
+D:\ProgrammingProjects\c#\Git\EasyFileShare\ProjectFiles\FileShareServer\FileShareServer\obj\Debug\FileShareServer.exe
+D:\ProgrammingProjects\c#\Git\EasyFileShare\ProjectFiles\FileShareServer\FileShareServer\obj\Debug\FileShareServer.pdb
