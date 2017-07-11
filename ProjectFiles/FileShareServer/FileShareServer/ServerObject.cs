@@ -30,7 +30,7 @@ namespace FileShareServer
                 Server.BeginAccept(null, Server);
                 Console.WriteLine("SERVER_OBJECT: Async Server Started");
             }
-            else{}
+            else{/* Empty For Now */}
             
             
         }
