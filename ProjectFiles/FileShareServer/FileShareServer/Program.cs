@@ -9,8 +9,34 @@ namespace FileShareServer
 {
     class Program
     {
+  
         static void Main(string[] args)
         {
+            Console.WriteLine("Enter Server Info EXAMPLE: 145.345.0.5 25565");
+         
+
+            while (true)
+            {
+                
+                switch (Console.ReadLine().ToLower())
+                {
+                  
+                    case "server create":
+                        string[] Response = Console.ReadLine().Split();
+                        ServerObject server = new ServerObject(Response[0], Int32.Parse(Response[1]));
+                        server.Start();
+                        break;
+
+                    case "quit":
+                        Environment.Exit(0);
+                        break;
+
+                    default:
+                        Console.WriteLine("Sorry thats not a command. Use - server create <ip> <port> to create a server" );
+                        break;
+                        
+                }
+            }
         }
     }
 }
