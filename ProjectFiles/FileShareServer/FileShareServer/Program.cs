@@ -12,7 +12,8 @@ namespace FileShareServer
   
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter Server Info EXAMPLE: 145.345.0.5 25565");
+            Console.WriteLine("FileShareServer Version: 1.1");
+            Console.WriteLine("Commands: \n    -Create <IP> <Port>: Creates a socket server with the givin ip and port.\n    -Exit: exists the application");
          
 
             while (true)
@@ -27,7 +28,7 @@ namespace FileShareServer
                         server.Start();
                         break;
 
-                    case "quit":
+                    case "exit":
                         Environment.Exit(0);
                         break;
 
