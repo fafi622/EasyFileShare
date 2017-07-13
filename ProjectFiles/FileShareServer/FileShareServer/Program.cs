@@ -18,18 +18,30 @@ namespace FileShareServer
 
             while (true)
             {
-                
-                switch (Console.ReadLine().ToLower())
+                string[] command = Console.ReadLine().ToLower().Split();
+                switch (command[0])
                 {
                   
-                    case "server create":
-                        string[] Response = Console.ReadLine().Split();
-                        ServerObject server = new ServerObject(Response[0], Int32.Parse(Response[1]));
+                    case "create":
+                        ServerObject server = new ServerObject(command[1], Int32.Parse(command[2]));
                         server.Start();
                         break;
 
                     case "exit":
                         Environment.Exit(0);
+                        break;
+
+                    case "help":
+                        Console.Clear();
+                        Console.WriteLine("Commands: \n" +
+                            "    -Create <IP> <Port>: Creates a socket server with the givin ip and port.\n" +
+                            "    -Exit: Exists the application.\n" +
+                            "    -Help: List all commands.");
+                        break;
+
+                    case "debug":
+                        ServerObject master = new ServerObject("192.168.0.3", 25567);
+                        master.Start();
                         break;
 
                     default:
